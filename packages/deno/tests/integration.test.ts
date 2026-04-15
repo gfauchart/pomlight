@@ -21,8 +21,6 @@ for (const folder of entries) {
   }
 
   Deno.test(folder, async () => {
-    const xml = await Deno.readTextFile(`${dir}/fixture.poml`);
-
     let params: Record<string, unknown> = {};
     try {
       params = JSON.parse(await Deno.readTextFile(`${dir}/parameter.json`));
@@ -33,10 +31,9 @@ for (const folder of entries) {
     const format = (params.format ?? "message_dict") as OutputFormat;
 
     const expected = JSON.parse(await Deno.readTextFile(`${dir}/expected.json`));
-    const result = await poml(xml, {
+    const result = await poml(`${dir}/fixture.poml`, {
       context,
       format,
-      sourcePath: `${dir}/fixture.poml`,
     });
 
     assertEquals(result, expected);

@@ -4,37 +4,57 @@ Lightweight Deno/JSR library for parsing and rendering [POML](https://microsoft.
 
 ## Install
 
+```sh
+deno add jsr:@pomlight/pomlight
+```
+
 ```ts
-import { poml } from "jsr:@pomlight/pomlight";
+import { poml } from "@pomlight/pomlight";
 ```
 
 ## Usage
 
 ```ts
-import { poml } from "jsr:@pomlight/pomlight";
+import { poml } from "@pomlight/pomlight";
 
 // Render to message array (default)
 const messages = await poml(`
   <poml>
-    <system>You are a helpful assistant.</system>
-    <user>What is 2 + 2?</user>
+    <system-msg>You are a helpful assistant.</system-msg>
+    <human-msg>What is 2 + 2?</human-msg>
   </poml>
 `);
 
-// Render directly to OpenAI chat params
+// Render directly to OpenAI chat format
 const params = await poml(`
   <poml>
-    <runtime model="gpt-4o-mini" temperature="0" />
-    <system>You are a helpful assistant.</system>
-    <user>What is 2 + 2?</user>
+    <system-msg>You are a helpful assistant.</system-msg>
+    <human-msg>What is 2 + 2?</human-msg>
   </poml>
 `, { format: "openai_chat" });
+```
 
-await fetch("https://api.openai.com/v1/chat/completions", {
-  method: "POST",
-  headers: { "Content-Type": "application/json", Authorization: `Bearer ${apiKey}` },
-  body: JSON.stringify(params),
+### Use with OpenAI SDK
+
+```ts
+import OpenAI from "@openai/openai";
+import { poml } from "@pomlight/pomlight";
+
+const client = new OpenAI();
+
+const params = await poml(`
+  <poml>
+    <system-msg>You are a helpful assistant. Reply in one short sentence.</system-msg>
+    <human-msg>What is the capital of France?</human-msg>
+  </poml>
+`, { format: "openai_chat" }) as { messages: OpenAI.ChatCompletionMessageParam[] };
+
+const response = await client.chat.completions.create({
+  model: "gpt-4o-mini",
+  ...params,
 });
+
+console.log(response.choices[0].message.content);
 ```
 
 ## Output Formats

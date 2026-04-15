@@ -1,12 +1,17 @@
 {
   "version": "5",
   "specifiers": {
+    "jsr:@openai/openai@*": "6.34.0",
+    "jsr:@openai/openai@^6.34.0": "6.34.0",
     "jsr:@std/assert@1": "1.0.19",
     "jsr:@std/encoding@1": "1.0.10",
     "jsr:@std/internal@^1.0.12": "1.0.12",
     "jsr:@std/yaml@1": "1.0.12"
   },
   "jsr": {
+    "@openai/openai@6.34.0": {
+      "integrity": "c2bc27f6ddc03cd87122a539783b620c94b1ae7e3282984429813f117519c1b5"
+    },
     "@std/assert@1.0.19": {
       "integrity": "eaada96ee120cb980bc47e040f82814d786fe8162ecc53c91d8df60b8755991e",
       "dependencies": [
@@ -60,6 +65,7 @@
   },
   "workspace": {
     "dependencies": [
+      "jsr:@openai/openai@^6.34.0",
       "jsr:@std/assert@1",
       "jsr:@std/encoding@1",
       "jsr:@std/yaml@1"
