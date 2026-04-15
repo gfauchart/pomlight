@@ -1,6 +1,6 @@
 """Unit tests mirroring packages/deno/tests/unit.test.ts."""
 
-from pomlight import poml, read_full, PomlOptions
+from pomlight import poml, read_full
 from pomlight.types import Schema, ToolsSchema
 import pytest
 
@@ -56,7 +56,7 @@ def test_read_full_tool_alias():
 # ---------------------------------------------------------------------------
 
 def test_poml_dict_no_sideband():
-    result = poml("<poml><p>Hello</p></poml>", PomlOptions(format="dict"))
+    result = poml("<poml><p>Hello</p></poml>", format="dict")
     assert "messages" in result
     assert result.get("schema") is None
     assert result.get("tools") is None
@@ -67,7 +67,7 @@ def test_poml_dict_with_schema():
     result = poml("""<poml>
   <output-schema>{"type":"object","properties":{"result":{"type":"number"}}}</output-schema>
   <p>Compute</p>
-</poml>""", PomlOptions(format="dict"))
+</poml>""", format="dict")
     assert result["schema"]["type"] == "object"
 
 
@@ -76,7 +76,7 @@ def test_poml_dict_with_tools():
   <tool name="get_weather" description="Get weather for a city">{"type":"object","properties":{"city":{"type":"string"}}}</tool>
   <tool name="get_time" description="Get current time">{"type":"object","properties":{"timezone":{"type":"string"}}}</tool>
   <p>Use tools</p>
-</poml>""", PomlOptions(format="dict"))
+</poml>""", format="dict")
     tools = result["tools"]
     assert len(tools) == 2
     assert tools[0].name == "get_weather"
@@ -88,7 +88,7 @@ def test_poml_dict_with_runtime():
     result = poml("""<poml>
   <runtime temperature="0.5" top-p="0.9" stop="END" />
   <p>Hello</p>
-</poml>""", PomlOptions(format="dict"))
+</poml>""", format="dict")
     runtime = result["runtime"]
     assert runtime["temperature"] == 0.5
     assert runtime["topP"] == 0.9
@@ -101,7 +101,7 @@ def test_poml_dict_combined_sideband():
   <tool name="lookup">{"type":"object","properties":{"id":{"type":"integer"}}}</tool>
   <runtime temperature="1" max-tokens="500" />
   <p>All together</p>
-</poml>""", PomlOptions(format="dict"))
+</poml>""", format="dict")
     assert result["schema"]["type"] == "string"
     assert len(result["tools"]) == 1
     assert result["runtime"]["temperature"] == 1
@@ -116,7 +116,7 @@ def test_poml_openai_chat_schema():
     result = poml("""<poml>
   <output-schema>{"type":"array","items":{"type":"string"}}</output-schema>
   <p>List items</p>
-</poml>""", PomlOptions(format="openai_chat"))
+</poml>""", format="openai_chat")
     rf = result["response_format"]
     assert rf["type"] == "json_schema"
     assert rf["json_schema"]["name"] == "schema"
@@ -128,7 +128,7 @@ def test_poml_openai_chat_tools():
     result = poml("""<poml>
   <tool name="greet" description="Say hello">{"type":"object","properties":{"name":{"type":"string"}}}</tool>
   <p>Greet</p>
-</poml>""", PomlOptions(format="openai_chat"))
+</poml>""", format="openai_chat")
     tools = result["tools"]
     assert len(tools) == 1
     assert tools[0]["type"] == "function"
@@ -140,7 +140,7 @@ def test_poml_openai_chat_runtime():
     result = poml("""<poml>
   <runtime model="gpt-4o" temperature="0.3" max-tokens="100" top-p="0.9" />
   <p>Hello</p>
-</poml>""", PomlOptions(format="openai_chat"))
+</poml>""", format="openai_chat")
     assert result["model"] == "gpt-4o"
     assert result["temperature"] == 0.3
     assert result["max_tokens"] == 100

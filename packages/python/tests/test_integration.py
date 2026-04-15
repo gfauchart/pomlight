@@ -11,7 +11,7 @@ from pathlib import Path
 
 import pytest
 
-from pomlight import poml, PomlOptions
+from pomlight import poml
 from pomlight.types import Message, ContentMultiMediaBinary, ContentMultiMediaJson
 
 TESTS_DIR = Path(__file__).resolve().parent.parent.parent.parent / "integration-tests" / "tests"
@@ -55,7 +55,6 @@ def _serialize(obj):
 @pytest.mark.parametrize("folder", _collect_test_folders())
 def test_integration(folder: str):
     test_dir = TESTS_DIR / folder
-    xml = (test_dir / "fixture.poml").read_text()
 
     params: dict = {}
     param_file = test_dir / "parameter.json"
@@ -67,11 +66,7 @@ def test_integration(folder: str):
 
     expected = json.loads((test_dir / "expected.json").read_text())
 
-    result = poml(xml, PomlOptions(
-        context=context,
-        format=fmt,
-        source_path=str(test_dir / "fixture.poml"),
-    ))
+    result = poml(test_dir / "fixture.poml", context=context, format=fmt)
 
     result_serialized = _serialize(result)
     assert result_serialized == expected, f"Mismatch in {folder}"
