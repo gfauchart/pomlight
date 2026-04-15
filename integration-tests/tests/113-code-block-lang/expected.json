@@ -1,0 +1,6 @@
+[
+  {
+    "speaker": "human",
+    "content": "```python\ndef greet(name):\n\nreturn f\"Hello, {name}!\"\n```"
+  }
+]

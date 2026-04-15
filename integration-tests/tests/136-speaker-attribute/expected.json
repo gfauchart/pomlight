@@ -1,0 +1,14 @@
+[
+  {
+    "speaker": "system",
+    "content": "System instruction."
+  },
+  {
+    "speaker": "human",
+    "content": "User question."
+  },
+  {
+    "speaker": "ai",
+    "content": "Assistant answer."
+  }
+]

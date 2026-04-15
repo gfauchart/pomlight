@@ -1,0 +1,5 @@
+<poml syntax="xml">
+  <role>You are a helpful assistant.</role>
+  <task>Summarize the text.</task>
+  <hint>Be concise.</hint>
+</poml>

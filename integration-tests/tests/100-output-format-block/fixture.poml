@@ -1,0 +1,9 @@
+<poml>
+  <output-format>
+    <p>Return a JSON object.</p>
+    <list>
+      <item>name: string</item>
+      <item>age: number</item>
+    </list>
+  </output-format>
+</poml>

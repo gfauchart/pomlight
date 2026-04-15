@@ -1,0 +1,12 @@
+<poml>
+<system-msg>
+  <p>You are a helpful assistant.</p>
+  <p>Be concise.</p>
+</system-msg>
+<human-msg>
+  <p>What is 2 + 2?</p>
+</human-msg>
+<ai-msg>
+  <p>4</p>
+</ai-msg>
+</poml>

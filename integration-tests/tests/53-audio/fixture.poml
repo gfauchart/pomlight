@@ -1,0 +1,5 @@
+<poml>
+  <p>Listen: <audio src="note.wav" alt="A 440Hz tone" /> end.</p>
+  <audio src="note.wav" />
+  <p>Done.</p>
+</poml>

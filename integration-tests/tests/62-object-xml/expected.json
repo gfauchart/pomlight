@@ -1,0 +1,6 @@
+[
+  {
+    "speaker": "human",
+    "content": "# Extracted Documents\n\n```xml\n<item>\n  <source>invoice.pdf</source>\n  <doc_type>invoice</doc_type>\n  <amount>150</amount>\n</item>\n<item>\n  <source>receipt.pdf</source>\n  <doc_type>receipt</doc_type>\n  <amount>42</amount>\n</item>\n```"
+  }
+]

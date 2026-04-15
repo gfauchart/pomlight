@@ -1,0 +1,9 @@
+<poml>
+<stepwise-instructions>
+  <list>
+    <item>Interpret and rewrite user's query.</item>
+    <item>Think of a plan to solve the query.</item>
+    <item>Generate a response based on the plan.</item>
+  </list>
+</stepwise-instructions>
+</poml>

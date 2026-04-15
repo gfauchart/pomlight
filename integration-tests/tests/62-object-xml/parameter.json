@@ -1,0 +1,16 @@
+{
+  "context": {
+    "documents": [
+      {
+        "source": "invoice.pdf",
+        "doc_type": "invoice",
+        "amount": 150
+      },
+      {
+        "source": "receipt.pdf",
+        "doc_type": "receipt",
+        "amount": 42
+      }
+    ]
+  }
+}

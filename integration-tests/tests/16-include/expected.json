@@ -1,0 +1,6 @@
+[
+  {
+    "speaker": "human",
+    "content": "Before include.\n\nThis snippet is included from another file.\n\nAfter include."
+  }
+]

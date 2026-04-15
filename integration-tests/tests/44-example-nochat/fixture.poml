@@ -1,0 +1,6 @@
+<poml>
+<example chat="false" caption="Example 1" captionStyle="header">
+  <input caption="Passage">The sun provides energy for life on Earth.</input>
+  <output caption="Summary">The sun is essential for energy on Earth.</output>
+</example>
+</poml>

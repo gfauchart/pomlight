@@ -1,0 +1,3 @@
+<poml>
+  <table records="{{ items }}" selectedRecords=":2" selectedColumns="name" />
+</poml>

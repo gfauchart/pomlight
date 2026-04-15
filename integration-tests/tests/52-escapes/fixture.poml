@@ -1,0 +1,6 @@
+<poml>
+  <p>Ampersand: #amp; and &amp;</p>
+  <p>Quote: #quot; and Apos: #apos;</p>
+  <p>Angle: #lt; and #gt;</p>
+  <p>Hash: #hash; Braces: #lbrace; #rbrace;</p>
+</poml>

@@ -1,0 +1,9 @@
+<poml>
+<let name="count" type="integer">5</let>
+<let name="isVisible" value="true" />
+<let name="items">["apple", "banana", "cherry"]</let>
+<p if="isVisible">Count: {{count}}</p>
+<list>
+  <item for="item in items">{{item}}</item>
+</list>
+</poml>

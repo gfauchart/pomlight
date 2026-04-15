@@ -1,0 +1,9 @@
+{
+  "context": {
+    "fruits": [
+      "apple",
+      "banana",
+      "cherry"
+    ]
+  }
+}

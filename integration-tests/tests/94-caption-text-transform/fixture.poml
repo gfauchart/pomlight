@@ -1,0 +1,11 @@
+<poml>
+<stylesheet>
+{
+  "cp": {
+    "captionTextTransform": "upper"
+  }
+}
+</stylesheet>
+<cp caption="important note">Some content here.</cp>
+<role>You are a helpful assistant.</role>
+</poml>

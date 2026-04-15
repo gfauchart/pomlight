@@ -1,0 +1,6 @@
+[
+  {
+    "speaker": "human",
+    "content": "# Configuration\n\n```json\n{\n  \"model\": \"gpt-4\",\n  \"temperature\": 0.7,\n  \"tools\": [\n    \"search\",\n    \"calculator\"\n  ]\n}\n```"
+  }
+]

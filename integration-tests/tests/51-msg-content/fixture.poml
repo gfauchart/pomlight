@@ -1,0 +1,8 @@
+<poml>
+<human-msg>
+  <msg-content content="{{question}}" />
+</human-msg>
+<ai-msg>
+  <msg-content content="{{answer}}" />
+</ai-msg>
+</poml>

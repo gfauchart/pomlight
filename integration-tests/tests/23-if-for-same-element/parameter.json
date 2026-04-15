@@ -1,0 +1,18 @@
+{
+  "context": {
+    "tasks": [
+      {
+        "name": "Task A",
+        "visible": true
+      },
+      {
+        "name": "Task B",
+        "visible": false
+      },
+      {
+        "name": "Task C",
+        "visible": true
+      }
+    ]
+  }
+}

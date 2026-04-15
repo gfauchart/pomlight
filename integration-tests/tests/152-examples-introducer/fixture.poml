@@ -1,0 +1,12 @@
+<poml>
+  <examples introducer="Here are some examples of our capabilities:" caption="My Examples" captionStyle="bold">
+    <example>
+      <input>Hello</input>
+      <output>Hi there!</output>
+    </example>
+    <example>
+      <input>Bye</input>
+      <output>Goodbye!</output>
+    </example>
+  </examples>
+</poml>

@@ -1,0 +1,7 @@
+<poml>
+  <h>Top Level</h>
+  <section>
+    <h>Nested Section</h>
+    <p>Content inside nested section.</p>
+  </section>
+</poml>

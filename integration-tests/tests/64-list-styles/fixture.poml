@@ -1,0 +1,21 @@
+<poml>
+  <cp caption="Star List">
+    <list listStyle="star">
+      <item>Alpha</item>
+      <item>Beta</item>
+    </list>
+  </cp>
+  <cp caption="Plus List">
+    <list listStyle="plus">
+      <item>One</item>
+      <item>Two</item>
+    </list>
+  </cp>
+  <cp caption="Latin List">
+    <list listStyle="latin">
+      <item>First</item>
+      <item>Second</item>
+      <item>Third</item>
+    </list>
+  </cp>
+</poml>

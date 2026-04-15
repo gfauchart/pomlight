@@ -1,0 +1,10 @@
+<poml>
+  <h>Status Report</h>
+  <section>
+    <p if="hasErrors"><b>Errors found!</b> Please fix before continuing.</p>
+    <p if="allGood">All checks passed.</p>
+    <list>
+      <item for="step in steps">Step {{loop.index + 1}}/{{loop.length}}: {{step}}<span if="loop.first"> (start)</span><span if="loop.last"> (end)</span></item>
+    </list>
+  </section>
+</poml>

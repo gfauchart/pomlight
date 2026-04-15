@@ -1,0 +1,14 @@
+[
+  {
+    "speaker": "system",
+    "content": "You are a helpful assistant."
+  },
+  {
+    "speaker": "human",
+    "content": "What is the capital of France?"
+  },
+  {
+    "speaker": "ai",
+    "content": "Paris"
+  }
+]

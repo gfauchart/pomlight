@@ -1,0 +1,8 @@
+<poml>
+  <p>Before trim</p>
+  <span whiteSpace="trim">
+    Hello    world
+    with   spaces
+  </span>
+  <p>After trim</p>
+</poml>

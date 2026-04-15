@@ -1,0 +1,9 @@
+<poml>
+  <list>
+    <item for="category in categories">{{category.name}}
+      <list>
+        <item for="item in category.items">{{item}}</item>
+      </list>
+    </item>
+  </list>
+</poml>

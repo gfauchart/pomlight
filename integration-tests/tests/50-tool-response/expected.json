@@ -1,0 +1,13 @@
+[
+  {
+    "speaker": "tool",
+    "content": [
+      {
+        "type": "application/vnd.poml.toolresponse",
+        "content": "Search results for \"hello\":\n\n- Result 1\n- Result 2",
+        "id": "call_1",
+        "name": "search"
+      }
+    ]
+  }
+]

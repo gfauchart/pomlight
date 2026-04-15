@@ -1,0 +1,14 @@
+{
+  "context": {
+    "parts": [
+      "Look at this diagram:",
+      {
+        "type": "image/png",
+        "base64": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAADElEQVR4nGNgYGAAAAAEAAH2FzhVAAAAAElFTkSuQmCC",
+        "alt": "A single pixel"
+      },
+      "Describe the trend."
+    ]
+  },
+  "format": "openai_chat"
+}

@@ -1,0 +1,5 @@
+[
+  {"product": "Widget", "price": 9.99, "qty": 100},
+  {"product": "Gadget", "price": 24.50, "qty": 50},
+  {"product": "Doohickey", "price": 4.75, "qty": 200}
+]

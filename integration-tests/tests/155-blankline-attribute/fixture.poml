@@ -1,0 +1,7 @@
+<poml>
+  <p>Before paragraph</p>
+  <p blankLine="true">Middle paragraph with blank lines</p>
+  <p>After paragraph</p>
+  <cp caption="Note" blankLine="true">Important detail</cp>
+  <p>End</p>
+</poml>

@@ -1,0 +1,11 @@
+{
+  "context": {
+    "hasErrors": true,
+    "allGood": false,
+    "steps": [
+      "Lint",
+      "Build",
+      "Deploy"
+    ]
+  }
+}

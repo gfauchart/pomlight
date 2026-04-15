@@ -1,0 +1,3 @@
+<poml>
+  <p>Item {{loop.index + 1}}: {{entry.label}}</p>
+</poml>

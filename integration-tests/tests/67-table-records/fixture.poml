@@ -1,0 +1,32 @@
+<poml>
+  <HumanMessage>
+    <p>Find the common rule that maps input to output.</p>
+    <examples>
+      <example for="item in data" chat="false" caption="Example {{ loop.index }}" captionStyle="header">
+        <input><table records="{{ item.input }}"/></input>
+        <output><table records="{{ item.output }}"/></output>
+      </example>
+    </examples>
+    <p>Predict the output for this input:</p>
+    <input><table records="{{ test_input }}"/></input>
+  </HumanMessage>
+  <stylesheet>
+  {
+    "table": {
+      "syntax": "csv",
+      "writerOptions": {
+        "csvHeader": false,
+        "csvSeparator": " "
+      }
+    },
+    "input": {
+      "captionEnding": "colon-newline",
+      "captionStyle": "plain"
+    },
+    "output": {
+      "captionEnding": "colon-newline",
+      "captionStyle": "plain"
+    }
+  }
+  </stylesheet>
+</poml>

@@ -1,0 +1,5 @@
+<poml>
+  <p>{{ items.length }}</p>
+  <p>{{ name.toUpperCase() }}</p>
+  <p>{{ items.join(', ') }}</p>
+</poml>

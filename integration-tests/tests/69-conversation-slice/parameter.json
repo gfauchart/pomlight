@@ -1,0 +1,26 @@
+{
+  "context": {
+    "messages": [
+      {
+        "speaker": "system",
+        "content": "You are an assistant."
+      },
+      {
+        "speaker": "human",
+        "content": "What is the capital of France?"
+      },
+      {
+        "speaker": "ai",
+        "content": "The capital of France is Paris."
+      },
+      {
+        "speaker": "human",
+        "content": "And Germany?"
+      },
+      {
+        "speaker": "ai",
+        "content": "The capital of Germany is Berlin."
+      }
+    ]
+  }
+}

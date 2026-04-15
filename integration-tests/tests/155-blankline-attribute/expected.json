@@ -1,0 +1,6 @@
+[
+  {
+    "speaker": "human",
+    "content": "Before paragraph\n\nMiddle paragraph with blank lines\n\nAfter paragraph\n\n# Note\n\nImportant detail\n\nEnd"
+  }
+]

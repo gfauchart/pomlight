@@ -1,0 +1,8 @@
+{
+  "context": {
+    "items": [
+      {"name": "Alice", "score": 95},
+      {"name": "Bob", "score": 87}
+    ]
+  }
+}

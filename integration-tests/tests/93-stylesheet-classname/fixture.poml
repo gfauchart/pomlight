@@ -1,0 +1,10 @@
+<poml>
+<stylesheet>
+{
+  ".important": {
+    "captionStyle": "bold"
+  }
+}
+</stylesheet>
+<cp caption="Notice" className="important">Pay attention here.</cp>
+</poml>

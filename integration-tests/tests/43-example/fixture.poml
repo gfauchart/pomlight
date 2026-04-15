@@ -1,0 +1,6 @@
+<poml>
+<example>
+  <input>What is the capital of France?</input>
+  <output>Paris</output>
+</example>
+</poml>

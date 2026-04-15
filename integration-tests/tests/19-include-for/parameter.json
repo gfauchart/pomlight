@@ -1,0 +1,16 @@
+{
+  "context": {
+    "title": "Q1 Sales",
+    "entries": [
+      {
+        "label": "Revenue"
+      },
+      {
+        "label": "Expenses"
+      },
+      {
+        "label": "Profit"
+      }
+    ]
+  }
+}

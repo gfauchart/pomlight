@@ -1,0 +1,6 @@
+[
+  {
+    "speaker": "human",
+    "content": "# Role\n\nYou are a code reviewer.\n\n# Task\n\nReview the following code.\n\n# Code to Review\n\n`const x = 42;`\n\n# Review Criteria\n\n- **Correctness:** Is the logic right?\n- **Style:** Does it follow conventions?"
+  }
+]

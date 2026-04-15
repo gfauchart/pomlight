@@ -1,0 +1,6 @@
+{
+  "context": {
+    "items": ["one", "two", "three"],
+    "name": "alice"
+  }
+}

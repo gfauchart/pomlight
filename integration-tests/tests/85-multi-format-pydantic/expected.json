@@ -1,0 +1,28 @@
+{
+  "messages": [
+    {
+      "speaker": "system",
+      "content": "You are a helpful visual assistant.\n\nAlways describe images in detail."
+    },
+    {
+      "speaker": "human",
+      "content": [
+        "Here is a photo I took:",
+        {
+          "type": "image/png",
+          "base64": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAADElEQVR4nGNgYGAAAAAEAAH2FzhVAAAAAElFTkSuQmCC",
+          "alt": "A red pixel"
+        },
+        "Can you tell me what you see?"
+      ]
+    },
+    {
+      "speaker": "ai",
+      "content": "I can see a single red pixel. It appears to be a 1x1 image."
+    },
+    {
+      "speaker": "human",
+      "content": "Thanks! Now summarize our conversation."
+    }
+  ]
+}

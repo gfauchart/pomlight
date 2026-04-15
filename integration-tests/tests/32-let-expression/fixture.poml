@@ -1,0 +1,6 @@
+<poml>
+<let name="base" value="10" />
+<let name="increment" value="5" />
+<let name="total" value="{{ base + increment }}" />
+<p>Total: {{ total }}</p>
+</poml>

@@ -1,0 +1,6 @@
+[
+  {
+    "speaker": "human",
+    "content": "```xml\n<users>\n  <item>\n    <name>Alice</name>\n    <age>30</age>\n  </item>\n  <item>\n    <name>Bob</name>\n    <age>25</age>\n  </item>\n</users>\n```"
+  }
+]

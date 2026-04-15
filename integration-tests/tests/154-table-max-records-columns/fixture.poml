@@ -1,0 +1,7 @@
+<poml>
+  <table 
+    records="{{ data }}" 
+    maxRecords="2"
+    maxColumns="2"
+  />
+</poml>

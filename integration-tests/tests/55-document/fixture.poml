@@ -1,0 +1,4 @@
+<poml>
+  <Document src="sample.txt" />
+  <p>After the document.</p>
+</poml>

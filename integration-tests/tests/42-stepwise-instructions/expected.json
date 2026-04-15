@@ -1,0 +1,6 @@
+[
+  {
+    "speaker": "human",
+    "content": "# Stepwise Instructions\n\n- Interpret and rewrite user's query.\n- Think of a plan to solve the query.\n- Generate a response based on the plan."
+  }
+]

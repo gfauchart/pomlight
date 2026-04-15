@@ -1,0 +1,6 @@
+<poml>
+  <h>Report for {{title}}</h>
+  <section>
+    <include src="partials/row.poml" for="entry in entries" />
+  </section>
+</poml>

@@ -1,0 +1,6 @@
+[
+  {
+    "speaker": "human",
+    "content": "| Column 0 | Column 1 | Column 2 |\n| -------- | -------- | -------- |\n| 1        | 0        | 1        |\n| 0        | 1        | 0        |\n| 1        | 1        | 0        |"
+  }
+]

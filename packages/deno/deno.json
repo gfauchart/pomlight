@@ -1,0 +1,29 @@
+{
+  "name": "@pomlight/pomlight",
+  "version": "0.0.1",
+  "exports": "./src/mod.ts",
+  "compilerOptions": {
+    "lib": [
+      "deno.window"
+    ]
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1",
+    "@std/encoding": "jsr:@std/encoding@1",
+    "@std/yaml": "jsr:@std/yaml@1"
+  },
+  "tasks": {
+    "test": "deno test --allow-read --allow-env --allow-ffi --allow-sys tests/",
+    "test:unit": "deno test --allow-read --allow-env --allow-ffi --allow-sys tests/unit.test.ts",
+    "test:integration": "deno test --allow-read --allow-env --allow-ffi --allow-sys tests/integration.test.ts",
+    "test:e2e": "deno test --allow-read --allow-net --allow-env tests/e2e-openai.test.ts"
+  },
+  "publish": {
+    "include": [
+      "src/**/*.ts",
+      "deno.json",
+      "README.md",
+      "LICENSE"
+    ]
+  }
+}

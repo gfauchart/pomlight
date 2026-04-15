@@ -1,0 +1,6 @@
+<poml>
+  <section for="i in items">
+    <h>{{ i.title }}</h>
+    <p>{{ i.body }}</p>
+  </section>
+</poml>

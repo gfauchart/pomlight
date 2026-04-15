@@ -1,0 +1,4 @@
+<poml>
+<p>{{firstName + " " + lastName}}</p>
+<p>{{greeting + ", " + firstName + "!"}}</p>
+</poml>

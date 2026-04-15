@@ -1,0 +1,5 @@
+<poml>
+<system-msg>You are a helpful assistant.</system-msg>
+<human-msg>What is the capital of France?</human-msg>
+<ai-msg>Paris</ai-msg>
+</poml>

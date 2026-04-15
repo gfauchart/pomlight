@@ -1,0 +1,20 @@
+{
+  "context": {
+    "categories": [
+      {
+        "name": "Fruits",
+        "items": [
+          "Apple",
+          "Banana"
+        ]
+      },
+      {
+        "name": "Veggies",
+        "items": [
+          "Carrot",
+          "Pea"
+        ]
+      }
+    ]
+  }
+}

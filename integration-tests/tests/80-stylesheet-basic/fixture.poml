@@ -1,0 +1,10 @@
+<poml>
+<stylesheet>
+{
+  "p": {
+    "syntax": "json"
+  }
+}
+</stylesheet>
+<p>Hello</p>
+</poml>

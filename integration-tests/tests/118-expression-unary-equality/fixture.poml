@@ -1,0 +1,6 @@
+<poml>
+  <p>{{ a > b ? 'a wins' : 'b wins' }}</p>
+  <p>{{ !flag ? 'negated' : 'original' }}</p>
+  <p>{{ name == 'Alice' ? 'match' : 'no match' }}</p>
+  <p>{{ x != y ? 'different' : 'same' }}</p>
+</poml>

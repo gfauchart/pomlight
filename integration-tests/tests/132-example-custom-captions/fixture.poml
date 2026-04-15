@@ -1,0 +1,6 @@
+<poml>
+  <example chat="false" caption="Test" captionStyle="header">
+    <input caption="Query" captionStyle="bold" captionEnding="colon-newline">What is POML?</input>
+    <output caption="Response" captionStyle="bold" captionEnding="colon-newline">POML is a markup language.</output>
+  </example>
+</poml>

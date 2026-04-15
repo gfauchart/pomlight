@@ -1,0 +1,8 @@
+{
+  "context": {
+    "items": [
+      {"title": "Part A", "body": "Content of part A."},
+      {"title": "Part B", "body": "Content of part B."}
+    ]
+  }
+}

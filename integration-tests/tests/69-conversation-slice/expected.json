@@ -1,0 +1,10 @@
+[
+  {
+    "speaker": "human",
+    "content": "What is the capital of France?"
+  },
+  {
+    "speaker": "ai",
+    "content": "The capital of France is Paris."
+  }
+]

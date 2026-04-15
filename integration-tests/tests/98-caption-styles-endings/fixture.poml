@@ -1,0 +1,7 @@
+<poml>
+  <cp caption="Summary" captionStyle="plain">This is a summary.</cp>
+  <cp caption="Details" captionStyle="plain" captionEnding="none">This has no ending.</cp>
+  <cp caption="Info" captionStyle="plain" captionEnding="newline">This is on a new line.</cp>
+  <cp caption="Warn" captionStyle="bold" captionEnding="none">This is bold no ending.</cp>
+  <cp caption="Note" captionStyle="bold" captionEnding="newline">This is bold newline.</cp>
+</poml>

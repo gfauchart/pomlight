@@ -1,0 +1,3 @@
+<poml>
+  <table src="assets/records.jsonl" parser="jsonl" syntax="csv" />
+</poml>

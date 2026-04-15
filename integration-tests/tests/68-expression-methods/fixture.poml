@@ -1,0 +1,7 @@
+<poml>
+  <p>{{ text.toUpperCase() }}</p>
+  <p>{{ greeting.trim() }}</p>
+  <p>{{ name.slice(0, 3) }}</p>
+  <p>{{ items.length }}</p>
+  <p>{{ items.join(", ") }}</p>
+</poml>

@@ -1,0 +1,6 @@
+<poml>
+  <let name="count" value="42" type="integer" />
+  <let name="flag" value="true" type="boolean" />
+  <let name="ratio" value="3.14" type="number" />
+  <p>count={{ count }}, flag={{ flag }}, ratio={{ ratio }}</p>
+</poml>

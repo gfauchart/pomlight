@@ -1,0 +1,4 @@
+<poml>
+  <conversation messages="{{ msgs }}" selectedMessages=":2" />
+  <conversation messages="{{ msgs }}" selectedMessages="-1:" />
+</poml>

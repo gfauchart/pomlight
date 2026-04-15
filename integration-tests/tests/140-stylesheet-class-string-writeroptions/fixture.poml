@@ -1,0 +1,11 @@
+<poml>
+  <stylesheet>
+    {
+      ".csv": {
+        "syntax": "csv",
+        "writerOptions": "{\"csvSeparator\":\";\",\"csvHeader\":false}"
+      }
+    }
+  </stylesheet>
+  <table className="csv" records="{{ rows }}" />
+</poml>

@@ -1,0 +1,11 @@
+<poml>
+  <cp caption="Input" captionStyle="plain" captionEnding="colon-newline">
+    Here is the user input.
+  </cp>
+  <cp caption="Output" captionStyle="plain" captionEnding="colon-newline">
+    Here is the expected output.
+  </cp>
+  <cp caption="Notes" captionStyle="bold" captionEnding="colon">
+    Some additional notes.
+  </cp>
+</poml>

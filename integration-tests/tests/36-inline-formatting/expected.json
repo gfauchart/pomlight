@@ -1,0 +1,6 @@
+[
+  {
+    "speaker": "human",
+    "content": "This is *italic* text.\n\nThis is __underlined__ text.\n\nThis is ~~struck through~~ text.\n\nThis is ~~also struck~~ text.\n\nLine one.\nLine two.\n\nMix: **bold** and *italic* and ~~strike~~"
+  }
+]

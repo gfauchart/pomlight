@@ -1,0 +1,14 @@
+<poml>
+<stylesheet>
+{
+  "table": {
+    "syntax": "csv",
+    "writerOptions": {
+      "csvSeparator": ";",
+      "csvHeader": false
+    }
+  }
+}
+</stylesheet>
+<table records="{{ items }}" />
+</poml>

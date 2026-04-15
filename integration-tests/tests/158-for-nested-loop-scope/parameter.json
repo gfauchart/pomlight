@@ -1,0 +1,5 @@
+{
+  "context": {
+    "groups": [["Alice", "Bob"], ["Carol", "Dave"]]
+  }
+}

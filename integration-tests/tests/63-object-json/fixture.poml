@@ -1,0 +1,5 @@
+<poml>
+  <cp caption="Configuration">
+    <object data="{{ config }}" syntax="json" />
+  </cp>
+</poml>

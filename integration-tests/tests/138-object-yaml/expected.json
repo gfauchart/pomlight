@@ -1,0 +1,6 @@
+[
+  {
+    "speaker": "human",
+    "content": "```yaml\nname: Quarterly review\nstats:\n  passed: 3\n  failed: 1\ntags:\n  - finance\n  - q1\n```"
+  }
+]

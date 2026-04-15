@@ -1,0 +1,5 @@
+<poml>
+  <p speaker="system">System instruction.</p>
+  <p speaker="human">User question.</p>
+  <p speaker="ai">Assistant answer.</p>
+</poml>

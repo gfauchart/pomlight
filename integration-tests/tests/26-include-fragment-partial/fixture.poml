@@ -1,0 +1,6 @@
+<poml>
+  <h>Guidelines</h>
+  <section>
+    <include src="partials/rules-fragment.poml" />
+  </section>
+</poml>

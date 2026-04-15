@@ -1,0 +1,5 @@
+<poml>
+<ai-msg>
+  <ToolRequest id="call_1" name="search" parameters="{{params}}" />
+</ai-msg>
+</poml>

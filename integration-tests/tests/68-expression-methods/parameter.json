@@ -1,0 +1,12 @@
+{
+  "context": {
+    "text": "hello world",
+    "greeting": "  hi there  ",
+    "name": "Alexander",
+    "items": [
+      "apple",
+      "banana",
+      "cherry"
+    ]
+  }
+}

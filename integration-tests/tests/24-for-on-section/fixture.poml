@@ -1,0 +1,7 @@
+<poml>
+  <h>Projects</h>
+  <section for="project in projects">
+    <h>{{project.name}}</h>
+    <p>{{project.description}}</p>
+  </section>
+</poml>

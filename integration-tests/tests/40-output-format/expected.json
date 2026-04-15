@@ -1,0 +1,6 @@
+[
+  {
+    "speaker": "human",
+    "content": "# Output Format\n\nRespond with a JSON without additional characters or punctuations."
+  }
+]

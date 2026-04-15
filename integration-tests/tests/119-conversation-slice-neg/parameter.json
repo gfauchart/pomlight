@@ -1,0 +1,9 @@
+{
+  "context": {
+    "msgs": [
+      {"speaker": "human", "content": "First message"},
+      {"speaker": "ai", "content": "Second message"},
+      {"speaker": "human", "content": "Third message"}
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+<poml>
+<p>First: {{items[0]}}</p>
+<p>Second: {{items[1]}}</p>
+<p>Nested: {{matrix[0][1]}}</p>
+</poml>

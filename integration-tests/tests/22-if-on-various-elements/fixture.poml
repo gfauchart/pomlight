@@ -1,0 +1,28 @@
+<poml>
+  <h>Report</h>
+  <section if="showDetails">
+    <h>Details</h>
+    <p>Detail content.</p>
+  </section>
+  <section if="hideDetails">
+    <h>Hidden Details</h>
+    <p>This should not appear.</p>
+  </section>
+  <h if="showSummary">Summary</h>
+  <h if="hideSummary">Hidden Summary</h>
+  <cp if="showNotes" caption="Notes">
+    <p>These are notes.</p>
+  </cp>
+  <p>Mode: <span if="isActive">active</span><span if="isInactive">inactive</span></p>
+  <list if="showList">
+    <item>Visible item</item>
+  </list>
+  <list if="hideList">
+    <item>Hidden item</item>
+  </list>
+  <list>
+    <item if="showA">Alpha</item>
+    <item if="showB">Beta</item>
+    <item>Gamma</item>
+  </list>
+</poml>

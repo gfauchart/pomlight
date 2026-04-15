@@ -1,0 +1,11 @@
+{
+  "context": {
+    "text": "hello world",
+    "msg": "   padded text",
+    "items": [
+      "apple",
+      "banana",
+      "cherry"
+    ]
+  }
+}

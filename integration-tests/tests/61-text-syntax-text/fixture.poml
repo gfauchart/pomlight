@@ -1,0 +1,5 @@
+<poml>
+  <cp caption="Email from Employee">
+    <text syntax="text">{{ email_text }}</text>
+  </cp>
+</poml>

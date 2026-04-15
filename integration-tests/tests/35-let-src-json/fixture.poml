@@ -1,0 +1,6 @@
+<poml>
+<let name="users" src="data/users.json" />
+<let src="data/config.json" />
+<p>Model: {{model}}</p>
+<p>First user: {{users[0].name}} ({{users[0].role}})</p>
+</poml>

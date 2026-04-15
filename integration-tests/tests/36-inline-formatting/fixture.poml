@@ -1,0 +1,8 @@
+<poml>
+<p>This is <i>italic</i> text.</p>
+<p>This is <u>underlined</u> text.</p>
+<p>This is <s>struck through</s> text.</p>
+<p>This is <strike>also struck</strike> text.</p>
+<p>Line one.<br />Line two.</p>
+<p>Mix: <b>bold</b> and <i>italic</i> and <s>strike</s></p>
+</poml>

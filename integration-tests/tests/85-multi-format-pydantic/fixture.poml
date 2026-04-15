@@ -1,0 +1,17 @@
+<poml>
+<system-msg>
+  <p>You are a helpful visual assistant.</p>
+  <p>Always describe images in detail.</p>
+</system-msg>
+<human-msg>
+  <p>Here is a photo I took:</p>
+  <img src="pixel.png" alt="A red pixel" syntax="multimedia" />
+  <p>Can you tell me what you see?</p>
+</human-msg>
+<ai-msg>
+  <p>I can see a single red pixel. It appears to be a 1x1 image.</p>
+</ai-msg>
+<human-msg>
+  <p>Thanks! Now summarize our conversation.</p>
+</human-msg>
+</poml>

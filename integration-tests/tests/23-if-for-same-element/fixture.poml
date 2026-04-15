@@ -1,0 +1,5 @@
+<poml>
+  <list>
+    <item for="task in tasks" if="{{task.visible}}">{{task.name}}</item>
+  </list>
+</poml>

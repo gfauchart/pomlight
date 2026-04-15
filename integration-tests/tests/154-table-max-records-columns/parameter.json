@@ -1,0 +1,10 @@
+{
+  "context": {
+    "data": [
+      {"name": "Alice", "age": 20, "city": "NYC", "score": 95},
+      {"name": "Bob", "age": 30, "city": "LA", "score": 87},
+      {"name": "Carol", "age": 25, "city": "SF", "score": 92},
+      {"name": "Dave", "age": 35, "city": "CHI", "score": 78}
+    ]
+  }
+}

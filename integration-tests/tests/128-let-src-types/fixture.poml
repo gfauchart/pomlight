@@ -1,0 +1,6 @@
+<poml>
+  <let name="data" src="values.json" />
+  <let name="text" src="note.txt" />
+  <p>Name: {{ data.name }}, Age: {{ data.age }}</p>
+  <p>{{ text }}</p>
+</poml>

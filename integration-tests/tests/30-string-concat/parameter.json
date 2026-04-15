@@ -1,0 +1,7 @@
+{
+  "context": {
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "greeting": "Hello"
+  }
+}

@@ -1,0 +1,4 @@
+<poml>
+  <p if="showGreeting">Hello, visible world!</p>
+  <p if="showFarewell">Goodbye, hidden world!</p>
+</poml>

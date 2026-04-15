@@ -1,0 +1,22 @@
+[
+  {
+    "speaker": "system",
+    "content": "# Examples"
+  },
+  {
+    "speaker": "human",
+    "content": "What is the capital of France?"
+  },
+  {
+    "speaker": "ai",
+    "content": "Paris"
+  },
+  {
+    "speaker": "human",
+    "content": "What is the capital of Germany?"
+  },
+  {
+    "speaker": "ai",
+    "content": "Berlin"
+  }
+]

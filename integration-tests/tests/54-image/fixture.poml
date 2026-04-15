@@ -1,0 +1,5 @@
+<poml>
+  <p>Before: <img src="pixel.png" alt="A red pixel" /> after.</p>
+  <img src="pixel.png" alt="standalone desc" />
+  <p>Done.</p>
+</poml>

@@ -1,0 +1,16 @@
+<poml>
+  <list>
+    <item>Fruits
+      <list>
+        <item>Apple</item>
+        <item>Banana</item>
+      </list>
+    </item>
+    <item>Vegetables
+      <list>
+        <item>Carrot</item>
+        <item>Pea</item>
+      </list>
+    </item>
+  </list>
+</poml>

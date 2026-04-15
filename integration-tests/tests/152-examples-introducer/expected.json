@@ -1,0 +1,22 @@
+[
+  {
+    "speaker": "system",
+    "content": "**My Examples:**\n\nHere are some examples of our capabilities:"
+  },
+  {
+    "speaker": "human",
+    "content": "Hello"
+  },
+  {
+    "speaker": "ai",
+    "content": "Hi there!"
+  },
+  {
+    "speaker": "human",
+    "content": "Bye"
+  },
+  {
+    "speaker": "ai",
+    "content": "Goodbye!"
+  }
+]

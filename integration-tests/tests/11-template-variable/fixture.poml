@@ -1,0 +1,3 @@
+<poml>
+  <p>Hello, {{name}}! Welcome to {{place}}.</p>
+</poml>

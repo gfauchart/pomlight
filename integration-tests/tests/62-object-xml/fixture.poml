@@ -1,0 +1,5 @@
+<poml>
+  <cp caption="Extracted Documents">
+    <object data="{{ documents }}" syntax="xml" />
+  </cp>
+</poml>

@@ -1,0 +1,15 @@
+{
+  "context": {
+    "report": {
+      "name": "Quarterly review",
+      "stats": {
+        "passed": 3,
+        "failed": 1
+      },
+      "tags": [
+        "finance",
+        "q1"
+      ]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "speaker": "system",
+    "content": "You are a helpful assistant.\n\nBe concise."
+  },
+  {
+    "speaker": "human",
+    "content": "Tell me about cats.\n\nInclude fun facts."
+  }
+]

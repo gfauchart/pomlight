@@ -1,0 +1,6 @@
+[
+  {
+    "speaker": "human",
+    "content": "| product   | price | qty |\n| --------- | ----- | --- |\n| Widget    | 9.99  | 100 |\n| Gadget    | 24.5  | 50  |\n| Doohickey | 4.75  | 200 |"
+  }
+]

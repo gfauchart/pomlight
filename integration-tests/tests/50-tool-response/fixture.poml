@@ -1,0 +1,9 @@
+<poml>
+<ToolResponse id="call_1" name="search">
+  <p>Search results for "hello":</p>
+  <list>
+    <item>Result 1</item>
+    <item>Result 2</item>
+  </list>
+</ToolResponse>
+</poml>

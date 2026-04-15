@@ -1,0 +1,6 @@
+[
+  {
+    "speaker": "human",
+    "content": "<role>You are a helpful assistant.</role>\n<task>Summarize the text.</task>\n<Hint>Be concise.</Hint>"
+  }
+]

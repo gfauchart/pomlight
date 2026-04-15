@@ -1,0 +1,6 @@
+[
+  {
+    "speaker": "human",
+    "content": "# docs\n\n## docs/intro.md\n\n```md\nWelcome to the guide.\n```\n\n## docs/faq.md\n\n# src\n\n## src/main.ts\n\n```ts\nconsole.log('hello');\n```"
+  }
+]

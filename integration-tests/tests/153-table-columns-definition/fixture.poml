@@ -1,0 +1,6 @@
+<poml>
+  <table 
+    records="{{ data }}" 
+    columns="{{ [{field: 'n', header: 'Full Name'}, {field: 'a', header: 'Age'}] }}" 
+  />
+</poml>

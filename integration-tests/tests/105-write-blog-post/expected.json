@@ -1,0 +1,6 @@
+[
+  {
+    "speaker": "human",
+    "content": "# Task\n\nCreate a blog post with these specifications:\n\n# Output Format\n\n1. Title: [SEO-friendly title]\n\n2. Introduction (100 words) \n\n   - Hook statement\n   - Context setting\n   - Main points preview\n\n3. Main body (800 words) \n\n   - 3-4 main points\n   - Each point: [subtitle + 200 words]\n   - Include real examples\n   - Add actionable tips\n\n4. Conclusion (100 words) \n\n   - Summary of key points\n   - Call to action\n\n# Style\n\n- Tone: Professional but conversational\n- Level: Intermediate audience\n- Voice: Active, engaging\n- Format: Scannable, with subheadings\n\n# Include\n\n- Practical examples\n- Statistics or research\n- Actionable takeaways\n- Relevant analogies"
+  }
+]

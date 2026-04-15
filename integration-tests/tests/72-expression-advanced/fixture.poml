@@ -1,0 +1,5 @@
+<poml>
+  <p>{{ text.replace("world", "POML") }}</p>
+  <p>{{ msg.trimStart() }}</p>
+  <p>{{ items.includes("banana") }}</p>
+</poml>

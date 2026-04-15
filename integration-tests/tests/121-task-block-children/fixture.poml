@@ -1,0 +1,9 @@
+<poml>
+  <task>
+    <p>Analyze the following data.</p>
+    <list>
+      <item>Check for errors</item>
+      <item>Summarize findings</item>
+    </list>
+  </task>
+</poml>

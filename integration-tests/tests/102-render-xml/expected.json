@@ -1,0 +1,6 @@
+[
+  {
+    "speaker": "human",
+    "content": "<role>Senior Systems Architecture Consultant</role>\n<task>Legacy System Migration Analysis</task>\n<Context>\n  <item>Fortune 500 retail company</item>\n  <item>Current system: 15-year-old monolithic application</item>\n  <item>500+ daily users</item>\n  <item>99.99% uptime requirement</item>\n</Context>\n<RequiredAnalysis>\n  <item>Migration risks and mitigation strategies</item>\n  <item>Cloud vs hybrid options</item>\n  <item>Cost-benefit analysis</item>\n  <item>Implementation roadmap</item>\n</RequiredAnalysis>\n<outputFormat>\n  <item>Executive brief (250 words)</item>\n  <item>Technical details (500 words)</item>\n  <item>Risk matrix</item>\n  <item>Timeline visualization</item>\n  <item>Budget breakdown</item>\n</outputFormat>\n<Constraints>\n  <item>Must maintain operational continuity</item>\n  <item>Compliance with GDPR and CCPA</item>\n  <item>Maximum 18-month implementation window</item>\n</Constraints>"
+  }
+]

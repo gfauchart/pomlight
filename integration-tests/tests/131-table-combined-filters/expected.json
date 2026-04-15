@@ -1,0 +1,6 @@
+[
+  {
+    "speaker": "human",
+    "content": "| name  | score | grade |\n| ----- | ----- | ----- |\n| Alice | 95    | A     |\n| Bob   | 87    | B     |"
+  }
+]

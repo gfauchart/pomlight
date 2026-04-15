@@ -1,0 +1,4 @@
+<poml>
+<p>{{active ? "enabled" : "disabled"}}</p>
+<p>{{count > 0 ? "has items" : "empty"}}</p>
+</poml>

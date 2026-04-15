@@ -1,0 +1,6 @@
+[
+  {
+    "speaker": "human",
+    "content": "Find the common rule that maps input to output.\n\n# Examples\n\n## Example 0\n\nInput:\n0 1\n1 0\n\nOutput:\n1 0\n0 1\n\n## Example 1\n\nInput:\n1 1\n0 0\n\nOutput:\n0 0\n1 1\n\nPredict the output for this input:\n\nInput:\n0 0\n1 1"
+  }
+]

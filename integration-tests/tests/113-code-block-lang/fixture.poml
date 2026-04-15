@@ -1,0 +1,6 @@
+<poml>
+  <code inline="false" lang="python">
+    <p>def greet(name):</p>
+    <p>    return f"Hello, {name}!"</p>
+  </code>
+</poml>

@@ -1,0 +1,8 @@
+<poml>
+  <examples>
+    <example for="ex in demos" chat="false" caption="Example {{ loop.index + 1 }}" captionStyle="bold">
+      <input>{{ ex.q }}</input>
+      <output>{{ ex.a }}</output>
+    </example>
+  </examples>
+</poml>

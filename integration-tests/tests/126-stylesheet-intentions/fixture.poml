@@ -1,0 +1,12 @@
+<poml>
+<stylesheet>
+{
+  "hint": {
+    "captionStyle": "plain"
+  }
+}
+</stylesheet>
+<hint>Use clear language.</hint>
+<output-format captionStyle="bold" captionEnding="newline">Return JSON.</output-format>
+<cp caption="Notes" captionStyle="plain">Extra notes here.</cp>
+</poml>

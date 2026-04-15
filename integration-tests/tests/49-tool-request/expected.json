@@ -1,0 +1,15 @@
+[
+  {
+    "speaker": "ai",
+    "content": [
+      {
+        "type": "application/vnd.poml.toolrequest",
+        "content": {
+          "query": "hello world"
+        },
+        "id": "call_1",
+        "name": "search"
+      }
+    ]
+  }
+]

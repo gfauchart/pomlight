@@ -1,0 +1,4 @@
+<poml>
+  <let src="config.json" />
+  <p>Name: {{ name }}, Role: {{ role }}</p>
+</poml>

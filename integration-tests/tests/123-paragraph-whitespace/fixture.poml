@@ -1,0 +1,5 @@
+<poml>
+  <p>Normal text.</p>
+  <p whiteSpace="pre">  Preserved   spaces   here.  </p>
+  <p whiteSpace="trim">  Trimmed   edges   only.  </p>
+</poml>

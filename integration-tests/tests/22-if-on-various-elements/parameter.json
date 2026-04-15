@@ -1,0 +1,15 @@
+{
+  "context": {
+    "showDetails": true,
+    "hideDetails": false,
+    "showSummary": true,
+    "hideSummary": false,
+    "showNotes": true,
+    "isActive": true,
+    "isInactive": false,
+    "showList": true,
+    "hideList": false,
+    "showA": true,
+    "showB": false
+  }
+}

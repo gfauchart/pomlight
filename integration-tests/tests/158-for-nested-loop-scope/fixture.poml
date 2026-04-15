@@ -1,0 +1,9 @@
+<poml>
+  <list>
+    <item for="group in groups">Group {{ loop.index }}:
+      <list>
+        <item for="member in group">{{ member }} (inner={{ loop.index }})</item>
+      </list>
+    </item>
+  </list>
+</poml>

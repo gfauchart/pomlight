@@ -1,0 +1,13 @@
+<poml>
+  <role>You are a code reviewer.</role>
+  <task>Review the following code.</task>
+  <cp caption="Code to Review">
+    <code inline="true">const x = 42;</code>
+  </cp>
+  <cp caption="Review Criteria">
+    <list>
+      <item><b>Correctness:</b> Is the logic right?</item>
+      <item><b>Style:</b> Does it follow conventions?</item>
+    </list>
+  </cp>
+</poml>

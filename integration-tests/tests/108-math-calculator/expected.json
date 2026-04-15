@@ -1,0 +1,26 @@
+[
+  {
+    "speaker": "system",
+    "content": "# Role\n\nYou are a highly skilled math calculator.\n\n# Task\n\nPerform the following calculations accurately and efficiently."
+  },
+  {
+    "speaker": "human",
+    "content": "What is 25 multiplied by 4?"
+  },
+  {
+    "speaker": "ai",
+    "content": "100"
+  },
+  {
+    "speaker": "human",
+    "content": "What is the square root of 144?"
+  },
+  {
+    "speaker": "ai",
+    "content": "12"
+  },
+  {
+    "speaker": "human",
+    "content": "What is 15% of 200?"
+  }
+]

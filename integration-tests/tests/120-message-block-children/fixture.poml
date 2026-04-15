@@ -1,0 +1,10 @@
+<poml>
+  <system-msg>
+    <p>You are a helpful assistant.</p>
+    <p>Be concise.</p>
+  </system-msg>
+  <human-msg>
+    <p>Tell me about cats.</p>
+    <p>Include fun facts.</p>
+  </human-msg>
+</poml>

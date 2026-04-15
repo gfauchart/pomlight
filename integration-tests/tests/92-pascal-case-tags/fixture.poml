@@ -1,0 +1,8 @@
+<poml>
+  <Paragraph>PascalCase paragraph.</Paragraph>
+  <Bold>Bold text</Bold>
+  <Section>
+    <Header>Section Header</Header>
+    <Paragraph>Section content.</Paragraph>
+  </Section>
+</poml>

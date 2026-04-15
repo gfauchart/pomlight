@@ -1,0 +1,3 @@
+<poml>
+  <qa questionCaption="User Query" answerCaption="Response">What is the weather today?</qa>
+</poml>

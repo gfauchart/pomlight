@@ -1,0 +1,5 @@
+<poml>
+  <cp caption="Simple Records">
+    <table records="{{ records }}" />
+  </cp>
+</poml>

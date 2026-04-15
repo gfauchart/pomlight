@@ -1,0 +1,5 @@
+<poml>
+  <list>
+    <item for="x in items">{{ x }} (index={{ loop.index }}, first={{ loop.first }}, last={{ loop.last }}, len={{ loop.length }})</item>
+  </list>
+</poml>

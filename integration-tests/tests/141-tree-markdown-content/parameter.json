@@ -1,0 +1,27 @@
+{
+  "context": {
+    "treeData": [
+      {
+        "name": "docs",
+        "children": [
+          {
+            "name": "intro.md",
+            "value": "Welcome to the guide."
+          },
+          {
+            "name": "faq.md"
+          }
+        ]
+      },
+      {
+        "name": "src",
+        "children": [
+          {
+            "name": "main.ts",
+            "value": "console.log('hello');"
+          }
+        ]
+      }
+    ]
+  }
+}

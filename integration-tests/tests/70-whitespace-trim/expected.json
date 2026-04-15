@@ -1,0 +1,6 @@
+[
+  {
+    "speaker": "human",
+    "content": "Before trim\n\nHello    world\n    with   spaces\n\nAfter trim"
+  }
+]

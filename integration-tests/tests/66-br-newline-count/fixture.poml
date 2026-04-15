@@ -1,0 +1,5 @@
+<poml>
+  <p>Line one</p>
+  <br newLineCount="3" />
+  <p>Line two after three newlines</p>
+</poml>

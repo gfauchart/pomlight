@@ -1,0 +1,6 @@
+[
+  {
+    "speaker": "human",
+    "content": "Normal text.\n\n  Preserved   spaces   here.  \n\nTrimmed   edges   only."
+  }
+]

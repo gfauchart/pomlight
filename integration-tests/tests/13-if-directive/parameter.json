@@ -1,0 +1,6 @@
+{
+  "context": {
+    "showGreeting": true,
+    "showFarewell": false
+  }
+}

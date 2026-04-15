@@ -1,0 +1,5 @@
+<poml>
+  <p>Before include.</p>
+  <include src="partials/snippet.poml" />
+  <p>After include.</p>
+</poml>

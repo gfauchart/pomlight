@@ -1,0 +1,6 @@
+[
+  {
+    "speaker": "human",
+    "content": "| name  | age | city | score |\n| ----- | --- | ---- | ----- |\n| Alice | 20  | NYC  | 95    |\n| ...   | ... | ...  | ...   |\n| Dave  | 35  | CHI  | 78    |"
+  }
+]

@@ -1,0 +1,5 @@
+<poml>
+  <list>
+    <item for="fruit in fruits">{{fruit}}</item>
+  </list>
+</poml>

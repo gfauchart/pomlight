@@ -1,0 +1,14 @@
+{
+  "context": {
+    "projects": [
+      {
+        "name": "Alpha",
+        "description": "First project."
+      },
+      {
+        "name": "Beta",
+        "description": "Second project."
+      }
+    ]
+  }
+}

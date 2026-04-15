@@ -1,0 +1,14 @@
+{
+  "context": {
+    "rows": [
+      {
+        "name": "Ada",
+        "score": 5
+      },
+      {
+        "name": "Linus",
+        "score": 8
+      }
+    ]
+  }
+}
