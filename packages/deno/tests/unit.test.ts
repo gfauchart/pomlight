@@ -54,7 +54,7 @@ Deno.test("readFull: tool alias <tool> works", async () => {
 // ---------------------------------------------------------------------------
 
 Deno.test("poml dict: no sideband returns messages only", async () => {
-  const result = await poml(`<poml><p>Hello</p></poml>`, { format: "dict" }) as Record<string, unknown>;
+  const result = await poml(`<poml><p>Hello</p></poml>`, { format: "dict" });
   assertExists(result.messages);
   assertEquals(result.schema, undefined);
   assertEquals(result.tools, undefined);
@@ -65,9 +65,9 @@ Deno.test("poml dict: with schema returns schema", async () => {
   const result = await poml(`<poml>
   <output-schema>{"type":"object","properties":{"result":{"type":"number"}}}</output-schema>
   <p>Compute</p>
-</poml>`, { format: "dict" }) as Record<string, unknown>;
+</poml>`, { format: "dict" });
   assertExists(result.schema);
-  assertEquals((result.schema as Record<string, unknown>).type, "object");
+  assertEquals(result.schema!.type, "object");
 });
 
 Deno.test("poml dict: with tools returns tools", async () => {
@@ -75,25 +75,23 @@ Deno.test("poml dict: with tools returns tools", async () => {
   <tool name="get_weather" description="Get weather for a city">{"type":"object","properties":{"city":{"type":"string"}}}</tool>
   <tool name="get_time" description="Get current time">{"type":"object","properties":{"timezone":{"type":"string"}}}</tool>
   <p>Use tools</p>
-</poml>`, { format: "dict" }) as Record<string, unknown>;
+</poml>`, { format: "dict" });
   assertExists(result.tools);
-  const tools = result.tools as { name: string; description: string }[];
-  assertEquals(tools.length, 2);
-  assertEquals(tools[0].name, "get_weather");
-  assertEquals(tools[1].name, "get_time");
-  assertEquals(tools[0].description, "Get weather for a city");
+  assertEquals(result.tools!.length, 2);
+  assertEquals(result.tools![0].name, "get_weather");
+  assertEquals(result.tools![1].name, "get_time");
+  assertEquals(result.tools![0].description, "Get weather for a city");
 });
 
 Deno.test("poml dict: with runtime returns runtime", async () => {
   const result = await poml(`<poml>
   <runtime temperature="0.5" top-p="0.9" stop="END" />
   <p>Hello</p>
-</poml>`, { format: "dict" }) as Record<string, unknown>;
+</poml>`, { format: "dict" });
   assertExists(result.runtime);
-  const runtime = result.runtime as Record<string, unknown>;
-  assertEquals(runtime.temperature, 0.5);
-  assertEquals(runtime.topP, 0.9);
-  assertEquals(runtime.stop, "END");
+  assertEquals(result.runtime!.temperature, 0.5);
+  assertEquals(result.runtime!.topP, 0.9);
+  assertEquals(result.runtime!.stop, "END");
 });
 
 Deno.test("poml dict: combined sideband data", async () => {
@@ -102,12 +100,12 @@ Deno.test("poml dict: combined sideband data", async () => {
   <tool name="lookup">{"type":"object","properties":{"id":{"type":"integer"}}}</tool>
   <runtime temperature="1" max-tokens="500" />
   <p>All together</p>
-</poml>`, { format: "dict" }) as Record<string, unknown>;
+</poml>`, { format: "dict" });
   assertExists(result.schema);
-  assertEquals((result.schema as Record<string, unknown>).type, "string");
-  assertEquals((result.tools as unknown[]).length, 1);
-  assertEquals((result.runtime as Record<string, unknown>).temperature, 1);
-  assertEquals((result.runtime as Record<string, unknown>).maxTokens, 500);
+  assertEquals(result.schema!.type, "string");
+  assertEquals(result.tools!.length, 1);
+  assertEquals(result.runtime!.temperature, 1);
+  assertEquals(result.runtime!.maxTokens, 500);
 });
 
 // ---------------------------------------------------------------------------
@@ -118,7 +116,7 @@ Deno.test("poml openai_chat: returns schema as response_format", async () => {
   const result = await poml(`<poml>
   <output-schema>{"type":"array","items":{"type":"string"}}</output-schema>
   <p>List items</p>
-</poml>`, { format: "openai_chat" }) as Record<string, unknown>;
+</poml>`, { format: "openai_chat" });
   assertExists(result.response_format);
   const rf = result.response_format as { type: string; json_schema: { name: string; schema: Record<string, unknown>; strict: boolean } };
   assertEquals(rf.type, "json_schema");
@@ -131,7 +129,7 @@ Deno.test("poml openai_chat: returns tools in OpenAI format", async () => {
   const result = await poml(`<poml>
   <tool name="greet" description="Say hello">{"type":"object","properties":{"name":{"type":"string"}}}</tool>
   <p>Greet</p>
-</poml>`, { format: "openai_chat" }) as Record<string, unknown>;
+</poml>`, { format: "openai_chat" });
   assertExists(result.tools);
   const tools = result.tools as { type: string; function: { name: string; description: string } }[];
   assertEquals(tools.length, 1);
@@ -144,7 +142,7 @@ Deno.test("poml openai_chat: runtime merged as snake_case keys", async () => {
   const result = await poml(`<poml>
   <runtime model="gpt-4o" temperature="0.3" max-tokens="100" top-p="0.9" />
   <p>Hello</p>
-</poml>`, { format: "openai_chat" }) as Record<string, unknown>;
+</poml>`, { format: "openai_chat" });
   assertEquals(result.model, "gpt-4o");
   assertEquals(result.temperature, 0.3);
   assertEquals(result.max_tokens, 100);

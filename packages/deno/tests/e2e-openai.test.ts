@@ -8,16 +8,14 @@ Deno.test({
   name: "e2e: simple messages passed to OpenAI",
   ignore: !apiKey,
   async fn() {
-    const params = await poml(`<poml>
+    const params = await poml<OpenAI.ChatCompletionCreateParamsNonStreaming>(`<poml>
+  <runtime model="gpt-4o-mini" />
   <system-msg>You are a helpful assistant. Reply in one short sentence.</system-msg>
   <human-msg>What is the capital of France?</human-msg>
-</poml>`, { format: "openai_chat" }) as { messages: OpenAI.ChatCompletionMessageParam[] };
+</poml>`, { format: "openai_chat" });
 
     const client = new OpenAI();
-    const response = await client.chat.completions.create({
-      model: "gpt-4o-mini",
-      ...params,
-    });
+    const response = await client.chat.completions.create(params);
 
     const answer = response.choices[0].message.content!;
     console.log("OpenAI answer:", answer);
@@ -29,18 +27,16 @@ Deno.test({
   name: "e2e: poml renders prompt and calls OpenAI chat completions",
   ignore: !apiKey,
   async fn() {
-    const params = await poml(`<poml>
+    const params = await poml<OpenAI.ChatCompletionCreateParamsNonStreaming>(`<poml>
   <runtime model="gpt-4o-mini" temperature="0" max-tokens="64" />
   <system>You are a helpful assistant. Reply in one short sentence.</system>
   <user>What is 2+2?</user>
-</poml>`, { format: "openai_chat" }) as Record<string, unknown>;
+</poml>`, { format: "openai_chat" });
 
     assertExists(params.messages);
 
     const client = new OpenAI();
-    const response = await client.chat.completions.create(
-      params as unknown as OpenAI.ChatCompletionCreateParams,
-    ) as OpenAI.Chat.ChatCompletion;
+    const response = await client.chat.completions.create(params);
 
     const answer = response.choices[0].message.content!;
     console.log("OpenAI answer:", answer);
@@ -52,21 +48,19 @@ Deno.test({
   name: "e2e: poml with tool definitions calls OpenAI",
   ignore: !apiKey,
   async fn() {
-    const params = await poml(`<poml>
+    const params = await poml<OpenAI.ChatCompletionCreateParamsNonStreaming>(`<poml>
   <runtime model="gpt-4o-mini" temperature="0" max-tokens="128" />
   <tool name="get_weather" description="Get the current weather for a city">
     {"type": "object", "properties": {"city": {"type": "string"}}, "required": ["city"]}
   </tool>
   <system>You are a helpful assistant. Use tools when appropriate.</system>
   <user>What's the weather in Paris?</user>
-</poml>`, { format: "openai_chat" }) as Record<string, unknown>;
+</poml>`, { format: "openai_chat" });
 
     assertExists(params.tools);
 
     const client = new OpenAI();
-    const response = await client.chat.completions.create(
-      params as unknown as OpenAI.ChatCompletionCreateParams,
-    ) as OpenAI.Chat.ChatCompletion;
+    const response = await client.chat.completions.create(params);
 
     const choice = response.choices[0];
     console.log("OpenAI finish_reason:", choice.finish_reason);
@@ -80,21 +74,19 @@ Deno.test({
   name: "e2e: poml with output-schema calls OpenAI structured output",
   ignore: !apiKey,
   async fn() {
-    const params = await poml(`<poml>
+    const params = await poml<OpenAI.ChatCompletionCreateParamsNonStreaming>(`<poml>
   <runtime model="gpt-4o-mini" temperature="0" max-tokens="128" />
   <output-schema>
     {"type": "object", "properties": {"answer": {"type": "number"}, "explanation": {"type": "string"}}, "required": ["answer", "explanation"], "additionalProperties": false}
   </output-schema>
   <system>You are a math tutor. Always respond using the provided JSON schema.</system>
   <user>What is 7 * 8?</user>
-</poml>`, { format: "openai_chat" }) as Record<string, unknown>;
+</poml>`, { format: "openai_chat" });
 
     assertExists(params.response_format);
 
     const client = new OpenAI();
-    const response = await client.chat.completions.create(
-      params as unknown as OpenAI.ChatCompletionCreateParams,
-    ) as OpenAI.Chat.ChatCompletion;
+    const response = await client.chat.completions.create(params);
 
     const parsed = JSON.parse(response.choices[0].message.content!);
     console.log("OpenAI structured output:", parsed);

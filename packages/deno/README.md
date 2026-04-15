@@ -17,21 +17,15 @@ import { poml } from "@pomlight/pomlight";
 ```ts
 import { poml } from "@pomlight/pomlight";
 
-// Render to message array (default)
 const messages = await poml(`
   <poml>
-    <system-msg>You are a helpful assistant.</system-msg>
-    <human-msg>What is 2 + 2?</human-msg>
+    <system>You are a helpful assistant.</system>
+    <user>What is 2 + 2?</user>
   </poml>
 `);
 
-// Render directly to OpenAI chat format
-const params = await poml(`
-  <poml>
-    <system-msg>You are a helpful assistant.</system-msg>
-    <human-msg>What is 2 + 2?</human-msg>
-  </poml>
-`, { format: "openai_chat" });
+console.log(messages[0].content); // "You are a helpful assistant."
+console.log(messages[1].content); // "What is 2 + 2?"
 ```
 
 ### Use with OpenAI SDK
@@ -42,28 +36,18 @@ import { poml } from "@pomlight/pomlight";
 
 const client = new OpenAI();
 
-const params = await poml(`
+const params = await poml<OpenAI.ChatCompletionCreateParamsNonStreaming>(`
   <poml>
-    <system-msg>You are a helpful assistant. Reply in one short sentence.</system-msg>
-    <human-msg>What is the capital of France?</human-msg>
+    <runtime model="gpt-4o-mini" />
+    <system>You are a helpful assistant. Reply in one short sentence.</system>
+    <user>What is the capital of France?</user>
   </poml>
-`, { format: "openai_chat" }) as { messages: OpenAI.ChatCompletionMessageParam[] };
+`, { format: "openai_chat" });
 
-const response = await client.chat.completions.create({
-  model: "gpt-4o-mini",
-  ...params,
-});
-
+const response = await client.chat.completions.create(params);
 console.log(response.choices[0].message.content);
 ```
 
-## Output Formats
-
-| `format` | Returns |
-|---|---|
-| `"message_dict"` (default) | `{ role, content }[]` |
-| `"dict"` | `{ messages, schema?, tools?, runtime? }` |
-| `"openai_chat"` | OpenAI-ready request body |
 
 ## Feature Coverage
 

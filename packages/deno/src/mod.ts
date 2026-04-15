@@ -22,17 +22,39 @@ export type {
   WriteOptions,
 } from "./types.ts";
 
-import { readFull } from "./read.ts";
-import { write, formatMessages } from "./write.ts";
-import type { Message, OutputFormat, RichContent, StyleSheet } from "./types.ts";
+/** Result shape for `format: "dict"`. */
+export interface DictResult {
+  messages: { speaker: string; content: RichContent }[];
+  schema?: Record<string, unknown>;
+  tools?: ToolDefinition[];
+  runtime?: Record<string, unknown>;
+}
 
-export interface PomlOptions {
+/** Base options without `format` (used in overload signatures). */
+interface PomlBaseOptions {
   context?: Record<string, unknown> | string;
   stylesheet?: StyleSheet | string;
   chat?: boolean;
+}
+
+import { readFull } from "./read.ts";
+import { write, formatMessages } from "./write.ts";
+import type { Message, OutputFormat, RichContent, StyleSheet, ToolDefinition } from "./types.ts";
+
+export interface PomlOptions extends PomlBaseOptions {
   format?: OutputFormat;
 }
 
+// -- Overloads: SDK-targeted formats use generic T for zero-cast ergonomics --
+export function poml<T = Record<string, unknown>>(markup: string, options: PomlBaseOptions & { format: "openai_chat" }): Promise<T>;
+export function poml<T = Record<string, unknown>>(markup: string, options: PomlBaseOptions & { format: "langchain" }): Promise<T>;
+export function poml<T = Record<string, unknown>>(markup: string, options: PomlBaseOptions & { format: "pydantic" }): Promise<T>;
+// -- Overloads: pomlight-owned formats with concrete return types --
+export function poml(markup: string, options: PomlBaseOptions & { format: "message_dict" }): Promise<Message[]>;
+export function poml(markup: string, options: PomlBaseOptions & { format: "dict" }): Promise<DictResult>;
+export function poml(markup: string, options: PomlBaseOptions & { format: "raw" }): Promise<string>;
+// -- Default (no format / no options) → message_dict --
+export function poml(markup: string, options?: PomlOptions): Promise<Message[]>;
 /**
  * Process POML markup and return the result in the specified format.
  *
