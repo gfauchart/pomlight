@@ -1,6 +1,9 @@
 # pomlight
 
 [![CI](https://github.com/gfauchart/pomlight/actions/workflows/ci.yml/badge.svg)](https://github.com/gfauchart/pomlight/actions/workflows/ci.yml)
+[![JSR version](https://jsr.io/badges/@pomlight/pomlight)](https://jsr.io/@pomlight/pomlight)
+[![npm version](https://img.shields.io/npm/v/@pomlight/pomlight.svg)](https://www.npmjs.com/package/@pomlight/pomlight)
+[![PyPI version](https://img.shields.io/pypi/v/pomlight.svg)](https://pypi.org/project/pomlight/)
 
 Lightweight multi-runtime implementations of [POML](https://microsoft.github.io/poml/latest/) — a structured markup language for LLM prompt engineering.
 
