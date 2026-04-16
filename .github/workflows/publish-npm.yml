@@ -39,13 +39,10 @@ jobs:
           node-version: "22"
           registry-url: "https://registry.npmjs.org"
 
-      - name: Upgrade npm
-        run: npm install -g npm@latest
-
       - name: Build npm package
         working-directory: packages/nodejs
         run: deno run -A dnt.ts
 
       - name: Publish to npm
         working-directory: packages/nodejs/npm
-        run: npm publish --access public
+        run: npx --yes npm@latest publish --access public
