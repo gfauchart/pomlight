@@ -19,6 +19,9 @@ await build({
       type: "git",
       url: "git+https://github.com/gfauchart/pomlight.git",
     },
+    publishConfig: {
+      access: "public",
+    },
     keywords: ["poml", "prompt", "llm", "openai"],
   },
   postBuild() {
