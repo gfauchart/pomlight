@@ -11,7 +11,8 @@ Lightweight multi-runtime implementations of [POML](https://microsoft.github.io/
 
 | Package | Runtime | Registry |
 |---|---|---|
-| [packages/deno](packages/deno/README.md) | Deno / Node | `jsr:@pomlight/pomlight` |
+| [packages/deno](packages/deno/README.md) | Deno | `jsr:@pomlight/pomlight` |
+| [packages/nodejs](packages/nodejs/README.md) | Node.js | `@pomlight/pomlight` on npm |
 | [packages/python](packages/python/README.md) | Python | `pomlight` on PyPI |
 
 ## Features
