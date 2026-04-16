@@ -1,6 +1,6 @@
 [project]
 name = "pomlight"
-version = "0.1.5"
+version = "0.1.6"
 description = "Lightweight Python library for parsing and rendering POML prompts"
 readme = "README.md"
 license = { text = "MIT" }
